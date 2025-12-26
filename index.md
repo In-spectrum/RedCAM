@@ -1,10 +1,10 @@
 <h1 align="center">
-	<a href="https://github.com/In-spectrum/BypassNAT" target="_blank">
-		<img src="manual/images/baner.png" width="750" height="250" alt='BypassNAT | System for remote access to devices.' >
+	<a href="https://github.com/In-spectrum/RedCAM" target="_blank">
+		<img src="manual/images/baner.png" width="750" height="250" alt='RedCAM | Personal media service.' >
 	</a>
 	<br>
-	<a href="https://github.com/In-spectrum/BypassNAT" target="_blank">
-		System for remote access to devices
+	<a href="https://github.com/In-spectrum/RedCAM" target="_blank">
+		Personal media service
 	</a>
 </h1>
 
@@ -19,7 +19,7 @@
 * ssh-tunnel setup, device access using ssh-protocol;
  
 **Application was tested**
-* <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">Windows 10, Ubuntu 20.04.6, Raspberry Pi 4 (Model B 8GB), Android 11;</a>
+* <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">Windows 10, Ubuntu 20.04.6, Raspberry Pi 4 (Model B 8GB), Android 11;</a>
 
 **Planned**
 * deployment on NVIDIA_Jetson_Nano, macOS;
@@ -27,7 +27,7 @@
 
 ## Table of contents
 
-* [**BypassNAT-client**](#bypassnat-client)
+* [**RedCAM-client**](#RedCAM-client)
   * [Functions](#functions)
   * [Compile from source](#compile-from-source)
   * [Exemples](#exemples-1)
@@ -36,20 +36,20 @@
 	* [Reverse SSH Tunneling](#reverse-ssh-tunneling)
 	* [Use another available server](#use-another-available-server)
 	* [Commands for the server](#commands-for-the-server)
-  * [**BypassNAT-client-fv**](#bypassnat-client-fv)
+  * [**RedCAM-client-fv**](#RedCAM-client-fv)
 	* [Available](#available)
 	* [Install](#install)
 		* [Windows](#windows)
 		* [Ubuntu](#ubuntu)
 		* [Raspberry Pi](#raspberry-pi)
-  * [**BypassNAT-client-lite**](#bypassnat-client-lite)
+  * [**RedCAM-client-lite**](#RedCAM-client-lite)
 	* [Available](#available-1)
 	* [Unavailable](#unavailable)
 	* [Install](#install-1)
 		* [Windows](#windows-1)
 		* [Ubuntu](#ubuntu-1)
 		* [Raspberry Pi](#raspberry-pi-1)
-  * [**BypassNAT-client-console-fv**](#bypassnat-client-console-fv)
+  * [**RedCAM-client-console-fv**](#RedCAM-client-console-fv)
 	* [Available](#available-2)
 	* [Unavailable](#unavailable-1)
 	* [Install](#install-2)
@@ -57,7 +57,7 @@
 		* [Ubuntu](#ubuntu-2)
 		* [Raspberry Pi](#raspberry-pi-2)
 	* [Properties](#properties)
-  * [**BypassNAT-client-console-lite**](#bypassnat-client-console-lite)
+  * [**RedCAM-client-console-lite**](#RedCAM-client-console-lite)
 	* [Available](#available-3)
 	* [Unavailable](#unavailable-2)
 	* [Install](#install-3)
@@ -67,12 +67,12 @@
 	* [Properties](#properties-1)
 * [**Installing additional software**](#installing-additional-software)
    * [GStreamer for Windows](#gstreamer-for-windows)
-* [**BypassNAT-server**](#bypassnat-server)
+* [**RedCAM-server**](#RedCAM-server)
   * [Functions](#functions-1)
   * [Features](#features)
   * [Properties](#properties-2)
   * [Install](#install-4)
-  * [Example script to check BypassNAT-server](#example-script-to-check-bypassnat-server)
+  * [Example script to check RedCAM-server](#example-script-to-check-RedCAM-server)
 * [**Video-server**](#video-server)
   * [Functions](#functions-2)
   * [Exemple](#exemple)
@@ -80,7 +80,7 @@
 * [**License**](#license)
 
 
-## **BypassNAT-client**
+## **RedCAM-client**
 ### &emsp;Functions  
   &emsp;&nbsp;- capture, broadcast, watch a desktop (RTSP, RTMP-protocol);
   <br>&emsp;&nbsp;- sending, emulating mouse and keyboard signals;
@@ -93,14 +93,14 @@
     
 ### &emsp;Compile from source
  &emsp;&nbsp;- install <a href="https://git-scm.com/downloads" target="_blank">git</a> and <a href="https://doc.qt.io/qt-6/get-and-install-qt.html" target="_blank">Qt</a> (v.6.7.3 or v.5.15.2, Qt Creator v.14.0.1);
- <br>&emsp;&nbsp;- clone <a href="https://github.com/In-spectrum/BypassNAT" target="_blank">the BypassNAT repository</a> and go to the **'src'** folder;
+ <br>&emsp;&nbsp;- clone <a href="https://github.com/In-spectrum/RedCAM" target="_blank">the RedCAM repository</a> and go to the **'src'** folder;
  <br>&emsp;&nbsp;- select **'main'** or  **'console-lite'** branch;
  <br>&emsp;&nbsp;- open file ***.pro** in the Qt Creator;
  <br>&emsp;&nbsp;- run the project;
 
 ### &emsp;[Exemples](#exemples-1)
 
-### BypassNAT-client-fv
+### RedCAM-client-fv
 **Full version.**<br>
 _&ensp;&nbsp;*installation of additional software required_
 
@@ -117,7 +117,7 @@ _&ensp;&nbsp;*installation of additional software required_
 #### **Install**
 ##### &emsp;Windows:
 - GStreamer install - [GStreamer for Windows](#gstreamer-for-windows);
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. Run **_RedCAMClient.ехе_**
 
 ##### &emsp;Ubuntu:
 ```
@@ -131,7 +131,7 @@ _&ensp;&nbsp;*installation of additional software required_
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./RedCAMClient.sh_**
 
 ##### &emsp;Raspberry Pi:
 ```
@@ -149,9 +149,9 @@ _&ensp;&nbsp;*installation of additional software required_
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-rtsp -y
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x RedCAMClient_** and run **_./RedCAMClient_**
 
-### **BypassNAT-client-lite**
+### **RedCAM-client-lite**
 **With user interface.**<br>
 _&ensp;&nbsp;*reduced functionality_
 <br>_&ensp;&nbsp;*lite installation of additional software required_
@@ -175,7 +175,7 @@ _&ensp;&nbsp;*reduced functionality_
 #### **Install**
 ##### &emsp;Windows:
 - codec installed for watch video;
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. Run **_RedCAMClient.ехе_**
 
 ##### &emsp;Ubuntu:
 ```
@@ -189,7 +189,7 @@ _&ensp;&nbsp;*reduced functionality_
 ```
 #sudo apt-get install gstreamer1.0-libav gstreamer1.0-plugins-bad -y
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./RedCAMClient.sh_**
 
 ##### &emsp;Raspberry Pi:
 ```
@@ -207,9 +207,9 @@ _&ensp;&nbsp;*reduced functionality_
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-rtsp -y
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x RedCAMClient_** and run **_./RedCAMClient_**
 
-### **BypassNAT-client-console-fv**
+### **RedCAM-client-console-fv**
 **Console application. 
 <br>Use in your applications or as an additional support service for your device.**<br>
 _&ensp;&nbsp;*installation of additional software required_
@@ -230,7 +230,7 @@ _&ensp;&nbsp;*installation of additional software required_
 #### **Install** 
 ##### &emsp;Windows:
 - GStreamer install - [GStreamer for Windows](#gstreamer-for-windows);
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. Run **_RedCAMClient.ехе_**
 
 ##### &emsp;Ubuntu:
 ```
@@ -244,7 +244,7 @@ _&ensp;&nbsp;*installation of additional software required_
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./RedCAMClient.sh_**
 
 ##### &emsp;Raspberry Pi:
 ```
@@ -261,20 +261,20 @@ _&ensp;&nbsp;*installation of additional software required_
 ```
 #sudo apt-get install gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-rtsp -y
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x RedCAMClient_** and run **_./RedCAMClient_**
 
 #### **Properties**
- **-spas** - set server password (default 1111); _**./BypassNatClient.sh -spas 2227**_
-<br> **-sip** - set IP for connect to server;  _**./BypassNatClient.sh -sip 137.34.15.27**_
-<br> **-ptcp** - set port for connect to server;  _**./BypassNatClient.sh -ptcp 1135**_
-<br> **-prtsp** - set port for broadcast video-stream; _**./BypassNatClient.sh -prtsp 8554**_
-<br> **-prtmp** - set port for broadcast video-stream;  _**./BypassNatClient.sh -prtmp 1927**_
-<br> **-log** - set your login;  _**./BypassNatClient.sh -log user1**_
-<br> **-pas** - set your password;  _**./BypassNatClient.sh -pas user1111**_
-<br> **-ds** - use another available server;  _**./BypassNatClient.sh -ds 1**_ [Use another available server](#use-another-available-server)
-<br> **-kds** - use another available server with an access key;  _**./BypassNatClient.sh -ds 1 -kds ExxxRt17j**_ [Use another available server](#use-another-available-server)
+ **-spas** - set server password (default 1111); _**./RedCAMClient.sh -spas 2227**_
+<br> **-sip** - set IP for connect to server;  _**./RedCAMClient.sh -sip 137.34.15.27**_
+<br> **-ptcp** - set port for connect to server;  _**./RedCAMClient.sh -ptcp 1135**_
+<br> **-prtsp** - set port for broadcast video-stream; _**./RedCAMClient.sh -prtsp 8554**_
+<br> **-prtmp** - set port for broadcast video-stream;  _**./RedCAMClient.sh -prtmp 1927**_
+<br> **-log** - set your login;  _**./RedCAMClient.sh -log user1**_
+<br> **-pas** - set your password;  _**./RedCAMClient.sh -pas user1111**_
+<br> **-ds** - use another available server;  _**./RedCAMClient.sh -ds 1**_ [Use another available server](#use-another-available-server)
+<br> **-kds** - use another available server with an access key;  _**./RedCAMClient.sh -ds 1 -kds ExxxRt17j**_ [Use another available server](#use-another-available-server)
 
-### **BypassNAT-client-console-lite**
+### **RedCAM-client-console-lite**
 **Console application. 
 <br>Use in your applications or as an additional support service for your device.**<br>
 _&ensp;&nbsp;*reduced functionality_
@@ -295,10 +295,10 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 
 #### **Install** 
 ##### &emsp;Windows:
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. Run **_BypassNatClient.ехе_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. Run **_RedCAMClient.ехе_**
 
 ##### &emsp;Ubuntu:
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./BypassNatClient.sh_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. In the command line, run **_./RedCAMClient.sh_**
 
 ##### &emsp;Raspberry Pi:
 ```
@@ -307,21 +307,21 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 #sudo nano /etc/xdg/qt5ct/qt5ct.conf
 #change style=gtk2 to style=gtk3
 ```
-- download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x BypassNatClient_** and run **_./BypassNatClient_**
+- download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip it. In the command line: **_chmod +x RedCAMClient_** and run **_./RedCAMClient_**
 
 #### **Properties**
- **-spas** - set server password (default 1111); _**./BypassNatClient.sh -spas 2227**_
-<br> **-sip** - set IP for connect to server;  _**./BypassNatClient.sh -sip 137.34.15.27**_
-<br> **-ptcp** - set port for connect to server;  _**./BypassNatClient.sh -ptcp 1135**_
-<br> **-log** - set your login;  _**./BypassNatClient.sh -log user1**_
-<br> **-pas** - set your password;  _**./BypassNatClient.sh -pas user1111**_
-<br> **-ds** - use another available server;  _**./BypassNatClient.sh -ds 1**_ [Use another available server](#use-another-available-server)
-<br> **-kds** - use another available server with an access key;  _**./BypassNatClient.sh -ds 1 -kds ExxxRt17j**_ [Use another available server](#use-another-available-server)
+ **-spas** - set server password (default 1111); _**./RedCAMClient.sh -spas 2227**_
+<br> **-sip** - set IP for connect to server;  _**./RedCAMClient.sh -sip 137.34.15.27**_
+<br> **-ptcp** - set port for connect to server;  _**./RedCAMClient.sh -ptcp 1135**_
+<br> **-log** - set your login;  _**./RedCAMClient.sh -log user1**_
+<br> **-pas** - set your password;  _**./RedCAMClient.sh -pas user1111**_
+<br> **-ds** - use another available server;  _**./RedCAMClient.sh -ds 1**_ [Use another available server](#use-another-available-server)
+<br> **-kds** - use another available server with an access key;  _**./RedCAMClient.sh -ds 1 -kds ExxxRt17j**_ [Use another available server](#use-another-available-server)
 
 ## Exemples
 
 ### File sharing
-- use BypassNatClient - Menu - File copy;
+- use RedCAMClient - Menu - File copy;
 - insert the full path to the file. Exemple: /home/user/folderKey/ssh-key-2020-11-09.key;
 - click the button to copy the file;
   
@@ -341,7 +341,7 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 - port _**6744**_ must be available on server _**user_server@0.0.0.0**_;
 
 #### &emsp;Create a reverse ssh-tunnel
-&emsp;Use BypassNatClient - Menu - Comand line - send a command to the controlled device _**dev_target**_
+&emsp;Use RedCAMClient - Menu - Comand line - send a command to the controlled device _**dev_target**_
 ~~~
 # sshpass -p password_user_server ssh -o StrictHostKeyChecking=accept-new user_server@0.0.0.0 -R 6744:localhost:22
 ~~~
@@ -365,7 +365,7 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 <br>
 <br>&emsp;**- console version of the application:**
 ~~~
-# ./BypassNatClient.sh -sip 158.101.219.244 -log user1 -pas user1111 -ds 1 -kds ExxxRt37j2
+# ./RedCAMClient.sh -sip 158.101.219.244 -log user1 -pas user1111 -ds 1 -kds ExxxRt37j2
 ~~~
 &emsp;**- versions of the application with user interface:** select Menu -> Server -> **use the developer server** -> enter **158.101.219.244** -> _( optional: enter **key** )_ -> New connect;
 
@@ -380,36 +380,36 @@ _<br>&ensp;&nbsp;*no additional software installation required_
 - select **Custom** and **check all plugins**;
 - add 'C:\gstreamer\1.0\mingw_x86_64\bin\' to **PATH** system;
 
-## BypassNAT-server
+## RedCAM-server
 ### Functions
 - search for available devices and exchange data between them;
 
 ### Features
-- the server must be online (statistics are kept on the number of working BypassNAT-servers);
+- the server must be online (statistics are kept on the number of working RedCAM-servers);
 - server usage, including in local networks, without collecting statistics is under development;
    
 ### Properties
-**-pas** - set server password (default 1111); _**./BypassNatServer.sh -pas 2227**_<br>
-**-p** - set listen port; _**./BypassNatServer.sh -p 1675**_<br>
-**-la** - time to disconnect clients with low activity; _**./BypassNatServer.sh -la 60**_<br>
+**-pas** - set server password (default 1111); _**./RedCAMServer.sh -pas 2227**_<br>
+**-p** - set listen port; _**./RedCAMServer.sh -p 1675**_<br>
+**-la** - time to disconnect clients with low activity; _**./RedCAMServer.sh -la 60**_<br>
 _<h style="font-size:8; ">&emsp;&emsp;&emsp;*if the client is connected and not in use, it will be disconnected from the server after 60sec.<br>
 &emsp;&emsp;&emsp;&ensp;After 30sec the client will reconnect to the server to identification on the network.</h>_
 
 ### Install
- - download <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">application archive</a> and unzip;
+ - download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip;
  - start the server with parameters:
-<br>**_BypassNatServer.ехе -pas 2227 -p 1675 -la 60_** - for Windows;
-<br>**_./BypassNatServer.sh -pas 2227 -p 1675 -la 60_** - for Ubuntu
-<br>**_chmod +x BypassNatServer_** and run **_./BypassNatServer -pas 2227 -p 1675 -la 60_** - for Raspberry Pi
+<br>**_RedCAMServer.ехе -pas 2227 -p 1675 -la 60_** - for Windows;
+<br>**_./RedCAMServer.sh -pas 2227 -p 1675 -la 60_** - for Ubuntu
+<br>**_chmod +x RedCAMServer_** and run **_./RedCAMServer -pas 2227 -p 1675 -la 60_** - for Raspberry Pi
 
-### Example script to check BypassNAT-server
+### Example script to check RedCAM-server
 
 ~~~
 #!/bin/bash
 
 sleep 10
 
-a_pFNS_tcp=1137 #for BypassNatServer
+a_pFNS_tcp=1137 #for RedCAMServer
 a_pRTSP=8554 #for RTSP
 a_pRTMP=1927 #for RTMP
 a_pSSH=6744 #for SSH
@@ -419,19 +419,19 @@ sudo systemctl start firewalld
 sudo firewall-cmd --zone=public --add-port=${a_pSSH}/tcp --permanent #for SSH
 sudo firewall-cmd --zone=public --add-port=${a_pRTSP}/tcp --permanent #for RTSP
 sudo firewall-cmd --zone=public --add-port=${a_pRTMP}/tcp --permanent #for RTMP
-sudo firewall-cmd --zone=public --add-port=${a_pFNS_tcp}/tcp --permanent #for BypassNatServer
+sudo firewall-cmd --zone=public --add-port=${a_pFNS_tcp}/tcp --permanent #for RedCAMServer
 sudo firewall-cmd --reload
 
 while true
 do
-    # BypassNatServer check
-    if pgrep "BypassNatServer" > /dev/null; then
-        echo "BypassNatServer STARTED!"
+    # RedCAMServer check
+    if pgrep "RedCAMServer" > /dev/null; then
+        echo "RedCAMServer STARTED!"
     else
-        echo "BypassNatServer NOT STARTED"
+        echo "RedCAMServer NOT STARTED"
 
-        cd /home/user/BypassNatServer
-        ./BypassNatServer.sh -p ${a_pFNS_tcp} &
+        cd /home/user/RedCAMServer
+        ./RedCAMServer.sh -p ${a_pFNS_tcp} &
     fi
 
     # Mediamtx check
@@ -463,7 +463,7 @@ Publishing and broadcasting a video stream of a desktop.
 - if you are not using desktop capture/broadcast, then installing a **Video-server** is not required.
 
 ## License
-All code in this repository is released under the <a href="https://github.com/In-spectrum/BypassNAT/blob/main/LICENSE">MIT license</a>. 
+All code in this repository is released under the <a href="https://github.com/In-spectrum/RedCAM/blob/main/LICENSE">MIT license</a>. 
 <br>Application archives and compiled binaries make use of some third-party dependencies:
 - Qt - the primary <a href="https://www.qt.io/licensing/open-source-lgpl-obligations#" target="_blank">open-source license</a> is the GNU Lesser General Public License v.3 <a href="https://www.gnu.org/licenses/lgpl-3.0.txt" target="_blank">“LGPL v3”</a>;
 - GStreamer - <a href="https://github.com/GStreamer/gstreamer/blob/main/LICENSE" target="_blank">licensed under the LGPL v2.1;
