@@ -11,19 +11,14 @@
 <br>
 
 **Purpose**
-* get remote access to devices located on a network where NAT is used;
-* using a private (or other accessible) server for:
-  * device management;
-  * file sharing;
-  * capture, broadcast and watch a desktop; 
-* ssh-tunnel setup, device access using ssh-protocol;
+* to create your own media service for viewing, recording RTSP streams from video cameras;
+* to share the video stream with other users;
  
 **Application was tested**
-* <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">Windows 10, Ubuntu 20.04.6, Raspberry Pi 4 (Model B 8GB), Android 11;</a>
+* <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">Windows 10, Ubuntu 20.04.6, Android 11;</a>
 
 **Planned**
-* deployment on NVIDIA_Jetson_Nano, macOS;
-* capture desktop in Linux using Wayland; 
+* macOS;
 
 ## Table of contents
 
