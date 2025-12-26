@@ -11,7 +11,7 @@
 <br>
 
 **Purpose**
-* to create зersonal media service for viewing, recording RTSP streams from video cameras;
+* to create personal media service for viewing, recording RTSP streams from video cameras;
 * share the video stream with other users;
  
 **Application was tested**
