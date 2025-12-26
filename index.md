@@ -1,4 +1,3 @@
-
 <h1 align="center">
 	<a href="https://github.com/In-spectrum/BypassNAT" target="_blank">
 		<img src="manual/images/baner.png" width="750" height="250" alt='BypassNAT | System for remote access to devices.' >
@@ -19,7 +18,7 @@
   * capture, broadcast and watch a desktop; 
 * ssh-tunnel setup, device access using ssh-protocol;
  
-**Application was tested** 
+**Application was tested**
 * <a href="https://github.com/In-spectrum/BypassNAT/releases" target="_blank">Windows 10, Ubuntu 20.04.6, Raspberry Pi 4 (Model B 8GB), Android 11;</a>
 
 **Planned**
