@@ -18,7 +18,7 @@
 * <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">Windows 10, Ubuntu 20.04.6, Android 11;</a>
 
 **Planned**
-* macOS;
+* iOS, macOS;
 
 ## Table of contents
 
