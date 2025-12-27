@@ -42,7 +42,7 @@ The administrator creates users and has access to all cameras.
 - simultaneous viewing of several video cameras;
 - setting the total time for recording files;
 - setting the status of the video camera as publicly available for all users on the server;
-- generating code for viewing the video camera by clients who are not connected to the server but have the application  -installed.
+- generating code for viewing the video camera by clients who are not connected to the server but have the application installed.
 
 ### Features
 - the server must be online (statistics are kept on the number of working RedCAM-servers);
