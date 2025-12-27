@@ -53,8 +53,7 @@ The administrator creates users and has access to all cameras.
 
 ### Install
  - download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip;
- - start the server with parameters:
-<br>**_RedCAMServer -pas 2227 -p 1675 -prtsp 8654_**
+ - start the server with parameters: **_RedCAMServer -pas 2227 -p 1675 -prtsp 8654_**
 
 
 ## Video-server
