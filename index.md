@@ -38,11 +38,11 @@
 The administrator creates users and has access to all cameras.
 
 ### Functions
-- add/delete RTSP streams of its cameras;
-- view several video cameras simultaneously;
-- set the total time for recording files;
-- set the status of the video camera as publicly available for all users on the server;
-- generate (send) a code for viewing the video camera to clients who are not connected to the server but have the application installed.
+- adding/deleting RTSP streams of its cameras;
+- simultaneous viewing of several video cameras;
+ -setting the total time for recording files;
+ -setting the status of the video camera as publicly available for all users on the server.
+ -generating code for viewing the video camera by clients who are not connected to the server but have the application  -installed.
 
 ### Features
 - the server must be online (statistics are kept on the number of working RedCAM-servers);
