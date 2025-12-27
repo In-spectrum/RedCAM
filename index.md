@@ -32,10 +32,10 @@
 ### Functions  
   &emsp;&nbsp;- user registration;
   <br>&emsp;&nbsp;- recording video files;
-  <br>&emsp;&nbsp;- user access to cameras and files depending on the status;
+  <br>&emsp;&nbsp;- user access to cameras and files (depending on the status);
 
 ## RedCAM-client
-The administrator creates, edits users and all available cameras.
+The administrator creates (edits) users and all available cameras.
 
 ### Functions
 - add/delete RTSP streams of its cameras;
