@@ -35,7 +35,7 @@
   <br>&emsp;&nbsp;- user access to cameras and files (depending on the status);
 
 ## RedCAM-client
-The administrator creates (edits) users and all available cameras.
+The administrator creates users and has access to all cameras.
 
 ### Functions
 - add/delete RTSP streams of its cameras;
