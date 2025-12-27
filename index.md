@@ -36,6 +36,15 @@
   <br>&emsp;&nbsp;- recording video files;
   <br>&emsp;&nbsp;- user access to cameras and files (depending on the status);
 
+### Properties
+**-pas** - set server password (default 1111); _**./RedCAMServer.sh -pas 2227**_<br>
+**-p** - set listen port; _**./RedCAMServer.sh -p 1675**_<br>
+**-prtsp** - set port for viewing video files; _**./RedCAMServer.sh -prtsp 8654**_<br>
+
+### Install
+ - download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip;
+ - start the server with parameters: **_RedCAMServer -pas 2227 -p 1675 -prtsp 8654_**
+
 ## RedCAM-client
 The administrator creates users and has access to all cameras.
 
@@ -46,16 +55,6 @@ The administrator creates users and has access to all cameras.
 - setting the status of the video camera as publicly available for all users on the server;
 - generating code for viewing the video camera by clients who are not connected to the server but have the application installed.
    
-### Properties
-**-pas** - set server password (default 1111); _**./RedCAMServer.sh -pas 2227**_<br>
-**-p** - set listen port; _**./RedCAMServer.sh -p 1675**_<br>
-**-prtsp** - set port for viewing video files; _**./RedCAMServer.sh -prtsp 8654**_<br>
-
-### Install
- - download <a href="https://github.com/In-spectrum/RedCAM/releases" target="_blank">application archive</a> and unzip;
- - start the server with parameters: **_RedCAMServer -pas 2227 -p 1675 -prtsp 8654_**
-
-
 ## Video-server
  _&ensp;&nbsp;*used third-party software_<br>
  
