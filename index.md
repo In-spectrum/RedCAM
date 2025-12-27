@@ -28,6 +28,10 @@
   * [Install](#install)
 * [**RedCAM-client**](#RedCAM-client)
   * [Functions](#functions-1)
+  * [Install](#install-1)
+* [**Installing additional software**](#installing-additional-software)
+   * [Windows](#app-for-windows)
+   * [Ubuntu](#app-for-ubuntu)
 * [**License**](#license)
 
 ## **RedCAM-server**
